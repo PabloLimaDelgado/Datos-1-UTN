@@ -1,0 +1,235 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    background: radial-gradient(circle, rgba(10,10,10,0.5) 76%, rgba(130,134,131,0.5) 100%), url(../assets/Fondo\ html.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.html-init{
+    background: radial-gradient(circle, rgba(10,10,10,0.5) 76%, rgba(130, 134, 131, 0.5) 100%),  url(../assets/Fondo\ html.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1em;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    height: 80px;
+    border: 2px solid whitesmoke;
+    border-radius: 2.5%;
+
+    background: linear-gradient(45deg, rgba(219,255,0,0.2) 5%, rgba(212,36,10,0.2) 50%, rgba(219,255,0,0.2) 95%), url(../assets/Lorem\ Ipsum.png);
+    overflow: hidden;
+}
+
+.logo i {
+    font-size: 2.5em; 
+    color: whitesmoke;
+    animation: flameMovement 1s infinite alternate; 
+    margin-right: 10px; 
+}
+
+.logo h1 {
+    font-size: 2.5em;
+    color: whitesmoke; 
+    margin: 0; 
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+/* Animación que imita el movimiento de una llama */
+@keyframes flameMovement {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-5px); 
+    }
+}
+
+nav {
+    background: linear-gradient(45deg, rgba(219,255,0,0.5) 5%, rgba(212,36,10,0.5) 50%, rgba(219,255,0,0.5) 95%);
+    border-top: 2px solid whitesmoke;
+    border-bottom: 2px solid whitesmoke;
+    overflow: hidden; 
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav a {
+    font-size: 1.5em;  
+    color: whitesmoke; 
+    text-decoration: none; 
+    font-family: 'Roboto', sans-serif;
+    transition: color 0.5s; 
+}
+
+nav a:hover {
+    color: rgba(10, 10, 10, 0.9); 
+}
+
+.div-main-secction{
+    margin: 1em 1em 1em 1em;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    align-items: center;
+    gap: 1em;
+}
+
+.div-main-secction section p{
+    color: whitesmoke;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+.div-main-secction aside img{
+    border: 1px solid whitesmoke;
+}
+
+.div-main-secction aside iframe{
+    border: 1px solid whitesmoke;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center; 
+    padding: 20px; 
+    background: rgba(0, 0, 0, 0.3);
+    border-top: 2px solid whitesmoke;
+    overflow: hidden;
+}
+
+footer section {
+    display: flex;
+    flex-direction: column;  
+}
+
+footer section div{
+    display: flex;
+    flex-direction: row;
+}
+
+footer h2, footer a {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.3em;
+    color: whitesmoke;
+    margin: 0 10px 10px 0; 
+    padding: 0.1em;  
+}
+
+footer a {
+    text-decoration: none;
+    transition: color 0.3s, background-color 0.8s; 
+    color: rgba(212,36,10,1);
+}
+
+footer a:hover {
+    color: black;
+    background-color: rgba(212,36,10,1); 
+    border-radius: 5px;
+    padding: 0.1em;
+}
+
+footer iframe {
+    border: 2px solid whitesmoke;  
+    border-radius: 2.5%;  
+}
+
+table {
+    margin: 0.5em; 
+    width: 80%; 
+    background-color: rgba(46, 46, 46, 0.5); 
+    overflow: hidden;
+    text-align: center; 
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+table caption {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3em;
+    color: whitesmoke;
+    margin-bottom: 10px; 
+}
+
+.table-padding td {
+    padding: 15px;
+    border: 1px solid #3A3A3A; 
+}
+
+.table-padding td img {
+    max-width: 100%; 
+    height: auto;
+    border-radius: 2.5%; 
+}
+
+.table-padding td h4 { 
+    font-size: 2em;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: whitesmoke; 
+}
+
+.div-contacto-secction {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: rgba(46, 46, 46, 0.5);
+    padding: 20px;
+    overflow: hidden; 
+}
+
+.div-contacto-secction section {
+    flex: 1; 
+    padding: 20px;
+}
+
+.div-contacto-secction section h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    color: whitesmoke;
+    font-size: 2em;
+}
+
+.div-contacto-secction section p {
+    color: whitesmoke;
+    font-size: 1.2em;
+    margin: 15px 0;
+}
+
+.div-contacto-secction section a {
+    font-family: 'Bebas Neue', sans-serif;
+    color: rgba(212,36,10,1); 
+    text-decoration: none; 
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.div-contacto-secction aside img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 2.5%;
+}
