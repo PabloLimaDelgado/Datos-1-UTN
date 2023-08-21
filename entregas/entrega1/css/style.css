@@ -16,6 +16,21 @@ html{
     height: 100%;
 }
 
+.html-init body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.html-init body main {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    gap: 3em;
+    flex-direction: column;
+}
+
+
 header{
     display: flex;
     align-items: center;
@@ -160,7 +175,6 @@ footer iframe {
 }
 
 table {
-    margin: 0.5em; 
     width: 80%; 
     background-color: rgba(46, 46, 46, 0.5); 
     overflow: hidden;
@@ -199,9 +213,8 @@ table caption {
     display: flex;
     justify-content: space-between; 
     align-items: center; 
-    background-color: rgba(46, 46, 46, 0.5);
     padding: 20px;
-    overflow: hidden; 
+    height: max-content; 
 }
 
 .div-contacto-secction section {
@@ -233,4 +246,8 @@ table caption {
     height: auto;
     border-radius: 2.5%;
     border: whitesmoke 1px solid;
+}
+
+main{
+    background-color: rgba(46, 46, 46, 0.5);
 }
