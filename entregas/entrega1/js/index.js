@@ -1,19 +1,16 @@
-const paginaMainIndex = document.documentElement; // Esto seleccionará el elemento <body>
+document.addEventListener("DOMContentLoaded", function() {
+    const paginaMainIndex = document.documentElement;  // Esto seleccionará el elemento <html>
 
-function pagina100PorCiento(page) {
-    window.addEventListener("DOMContentLoaded", (event) => {
-        if (page.scrollHeight > screen.height) {
-            page.classList.remove('html-init');
-        } else {
+    function pagina100PorCiento(page) {
+        if (page.scrollHeight <= window.innerHeight) {
             page.classList.add('html-init');
+        } else {
+            page.classList.remove('html-init');
         }
-    });
-}
-pagina100PorCiento(paginaMainIndex);
 
+        console.log(page.scrollHeight);
+        console.log(window.innerHeight);
+    }
 
-/*const htmlMain = document.getElementById('htmlMain') 
-
-if (htmlMain.scrollHeight < screen.height) {
-    htmlMain.classList.add('html-init')
-} */
+    pagina100PorCiento(paginaMainIndex);
+});
