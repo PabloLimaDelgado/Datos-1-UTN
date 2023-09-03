@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(circle at top, #1c2a48, #090a10);
+    color: #f4f6f8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+}
+
+.section_form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-family: 'Happy Monkey', cursive;
+}
+
+form {
+    background: rgba(28, 42, 72, 0.8);
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 500px;
+}
+
+div {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    color: #f4f6f8;
+    outline: none;
+    transition: background 0.3s;
+    font-family: 'Open Sans', sans-serif;
+}
+
+select optgroup option{
+    background: rgba(28, 42, 72, 0.8);
+}
+
+input:focus, select:focus {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+button {
+    cursor: pointer;
+    background: #095cb5;
+    color: #fff;
+    margin-top: 1rem;
+    transition: background 0.3s ease-in-out;
+    font-family: 'Happy Monkey', cursive;
+}
+
+button[disabled] {
+    background-color: #ddd; 
+    color: #aaa;            
+    cursor: not-allowed;    
+    border: 1px solid #ccc; 
+}
+
+
+.blackout {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: black;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s;
+    z-index: 9999;
+    height: 100vh;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    flex-direction: column; 
+    gap: 0.5em;
+}
+
+.blackout i{
+    color: #f4f6f8;
+    margin: 0;
+    font-size: 3.5em;
+    animation: spin 1s linear infinite;
+}
+
+.blackout p{
+    color: #f4f6f8;
+    margin: 0;
+    font-size: 2.5em;
+    font-family: 'Lato', sans-serif;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.section_resultado {
+    display: none;
+    background: rgba(28, 42, 72, 0.8);
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 700px;
+    flex-direction: column;
+    gap: 1.5rem; 
+}
+
+.result_item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.result_item h6 {
+    flex: 0 0 80px;
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.result_item p {
+    flex-grow: 1;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0.5rem;
+    border-radius: 5px;
+    min-height: 1em;
+    font-family: 'Lato', sans-serif;
+}
+
+.section_resultado button{
+    width: 20%;
+    position: relative;
+    left: 80%;
+}

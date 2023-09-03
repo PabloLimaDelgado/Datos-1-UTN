@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/f98c94bad0.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Happy+Monkey&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../ejersicios_complementarios/css/style1.css">
+    <script defer src="../ejersicios_complementarios/js/index1.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <section class="section_form">
+        <h1>FORMULARIO</h1>
+        <form action="" method="get">
+            <div>
+                <label for="nombre">Nombre: </label>
+                <input type="text" id="nombre">
+            </div>
+    
+            <div>
+                <label for="apellido">Apellido: </label>
+                <input type="text" id="apellido">
+            </div>
+    
+            <div>
+                <label for="edad">Edad: </label>
+                <input type="number" id="edad">
+            </div>
+    
+            <div>
+                <label for="año_curso">Año curso:</label>
+                <input type="number" id="año_curso">
+            </div>
+    
+            <div>
+                <label for="fecha_ingreso">Fecha ingreso: </label>
+                <input type="date" id="fecha_ingreso">
+            </div>
+    
+    
+            <div>
+                <label for="carrera1">Carrera 1: </label>
+                <select name="carrera1" id="carrera1">
+                    <optgroup>
+                        <option value="materia1">Materia 1</option>
+                        <option value="materia2">Materia 2</option>
+                    </optgroup>
+                </select>
+            </div>
+    
+            <div>
+                <label for="carrera2">Carrera 2: </label>
+                <select name="carrera2" id="carrera2">
+                    <optgroup>
+                        <option value="materia1">Materia 1</option>
+                        <option value="materia2">Materia 2</option>
+                    </optgroup>
+                </select>
+            </div>
+            <button type="submit" id="btn_form">Enviar</button>
+
+            <div class="blackout">
+                <i class="fa-solid fa-spinner"></i>
+                <p>Cargando</p>
+            </div>
+        </form>
+    </section>
+
+
+    <section class="section_resultado">
+        <h1>RESULTADOS</h1>
+        <div class="result_item">
+            <h6>Nombre: </h6><p id="result_nombre"></p>
+        </div>
+
+        <div class="result_item">
+            <h6>Apellido: </h6><p  id="result_apellido"></p>
+        </div>
+
+        <div class="result_item">
+            <h6>Edad: </h6><p id="result_edad"></p>
+        </div>
+
+        <div class="result_item">
+            <h6>Año curso: </h6><p id="result_curso"></p>
+        </div>
+
+        <div class="result_item">
+            <h6>Fecha ingreso: </h6><p id="result_fecha_ingreso"></p>
+        </div>
+
+        <div class="result_item">
+            <h6>Carrera 1: </h6><p id="result_carrera1"></p>
+        </div>
+
+        <div class="result_item">
+            <h6>Carrera 2: </h6><p id="result_carrera2"></p>
+        </div>
+
+        <button id="btn_volver">Volver</button>
+
+        <div class="blackout">
+            <i class="fa-solid fa-spinner"></i>
+            <p>Cargando</p>
+        </div>
+    </section>
+</body>
+</html>
