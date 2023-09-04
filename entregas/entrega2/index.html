@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../entrega2/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Happy+Monkey&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap" rel="stylesheet">
+    <script defer src="./js/index.js"></script> 
+    <title>Entrega2</title>
+</head>
+<body>
+    <main>
+        <h1>Formulario Carga de datos</h1>
+
+        <form form action="" method="get">
+            <section class="section1">
+                <div>
+                    <label for="apellido">Apellido: </label>
+                    <input type="text" id="apellido">
+
+                    <label for="numero_dni">Numero DNI: </label>
+                    <input type="number" id="numero_dni">
+
+                    <label for="domicilio">Domicilio: </label>
+                    <input type="text" id="domicilio">
+                </div>
+
+                <div>
+                    <label for="nombre">Nombre: </label>
+                    <input type="text" id="nombre">
+
+                    <label for="fecha_nacimiento">Fecha nacimiento: </label>
+                    <input type="date" id="fecha_nacimiento">
+
+                    <label for="localidad">Localidad: </label>
+                    <input type="text" id="localidad">
+                </div>
+            </section>
+
+            <section class="section2">
+                <div>
+                    <h2>Idiomas que conoce</h2>
+                    <div>
+                        <div>
+                            <label for="">Español</label>
+                            <input type="checkbox" name="idioma" id="español">
+                        </div>
+                        <div>
+                            <label for="">Ingles</label>
+                            <input type="checkbox" name="idioma" id="ingles">
+                        </div>
+                        <div>
+                            <label for="">Frances</label>
+                            <input type="checkbox" name="idioma" id="frances">
+                        </div>
+                        <div>
+                            <label for="">Chino</label>
+                            <input type="checkbox" name="idioma" id="chino">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2>Nivel de conocimiento</h2>
+                    <div>
+                        <input type="range" step="1" min="0" max="3" id="nivelEspañol" value="0">
+                        <input type="range" step="1" min="0" max="3" id="nivelIngles" value="0">
+                        <input type="range" step="1" min="0" max="3" id="nivelFrances" value="0">
+                        <input type="range" step="1" min="0" max="3" id="nivelChino" value="0">
+                    </div>
+                </div>
+            </section>
+
+            <section class="section3">
+                <button id="btnEnviar">Enviar</button>
+                <button id="btnBorrar">Borrar</button>
+            </section>
+        </form>
+
+        <div id="texto"></div>
+
+    </main>
+</body>
+</html>
